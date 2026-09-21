@@ -79,5 +79,5 @@ user_api:
     auto_join_rooms: []
 
 logging:
-    - type: stdout
+    - type: std
       level: info
