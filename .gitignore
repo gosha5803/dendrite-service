@@ -1,0 +1,14 @@
+# Секреты и ключи
+matrix_key.pem
+*.pem
+.env
+
+# Базы данных (на случай SQLite)
+*.db
+*.db-shm
+*.db-wal
+
+# Логи и артефакты
+*.log
+/tmp/
+/var/
