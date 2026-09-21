@@ -25,6 +25,6 @@ envsubst < "$CONFIG_TEMPLATE" > "$CONFIG_FILE"
 
 # --- 3. Запуск Dendrite ---
 echo "🚀 Starting Dendrite Monolith on port $PORT..."
-exec /usr/bin/dendrite-monolith-server \
+exec /usr/bin/dendrite \
     -config "$CONFIG_FILE" \
     -http-bind-address ":$PORT"
