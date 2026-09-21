@@ -6,7 +6,7 @@ RUN apk add --no-cache gettext && \
     mkdir -p /etc/dendrite /var/dendrite
 
 # Копируем шаблон конфига и entrypoint
-COPY dendrite.yaml /etc/dendrite/dendrite.yaml.template
+COPY dendrite.yaml.template /etc/dendrite/dendrite.yaml.template
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
